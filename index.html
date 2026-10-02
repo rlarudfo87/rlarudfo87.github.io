@@ -59,7 +59,7 @@
     .header-links {
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 10px;
     }
 
     .header-link {
@@ -70,6 +70,27 @@
     }
 
     .header-link:hover { color: #2563eb; }
+
+    .quick-app-link {
+      width: 34px;
+      height: 34px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 850;
+      border: 1px solid #dbe3ef;
+      background: #ffffff;
+      color: #2563eb;
+      transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+    }
+
+    .quick-app-link:hover {
+      transform: translateY(-1px);
+      border-color: #93b4ff;
+      background: #eff4ff;
+    }
 
     main {
       max-width: 1060px;
@@ -282,8 +303,9 @@
 
     @media (max-width: 640px) {
       .header-inner { padding: 16px 18px; }
-      .header-links { gap: 10px; }
+      .header-links { gap: 7px; }
       .header-link { font-size: 13px; }
+      .quick-app-link { width: 32px; height: 32px; font-size: 13px; }
       main { padding: 44px 18px 0; }
       .hero { padding: 34px 0 60px; }
       .hero h1 { letter-spacing: -1.2px; }
@@ -302,6 +324,8 @@
     <div class="header-inner">
       <div class="brand">FlowSoftLabs</div>
       <div class="header-links">
+        <a class="quick-app-link" href="#dispure" aria-label="DISPURE로 이동" title="DISPURE">D</a>
+        <a class="quick-app-link" href="#specflow" aria-label="제원플로로 이동" title="제원플로">제</a>
         <a class="header-link" href="#apps">Apps</a>
         <a class="header-link" href="#about">About</a>
         <a class="header-link" href="https://rlarudfo87.github.io/flowsoftlabs-privacy/">Privacy</a>
